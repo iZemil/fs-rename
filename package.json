@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "command-line-args": "5.2.0",
+    "glob": "7.2.0",
     "lodash.camelcase": "4.3.0",
     "lodash.kebabcase": "4.1.1",
     "lodash.snakecase": "4.1.1"

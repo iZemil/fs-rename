@@ -2,6 +2,10 @@
 
 npm cli package to rename files and folders
 
+## Installation
+
+`npm i -g fs-rename`
+
 ## Cli examples
 
 -   `fs-rename --to=kebab` change file and folder names to kebab case:
