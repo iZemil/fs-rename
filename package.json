@@ -1,0 +1,55 @@
+{
+  "name": "rename-all",
+  "version": "0.0.1",
+  "description": "npm cli package to rename files and folders",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "bin": {
+    "rename-all": "lib/cli.js"
+  },
+  "scripts": {
+    "dev": "tsc -w & nodemon -q -w ./lib/index.js",
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caki0915/my-awesome-greeter.git"
+  },
+  "keywords": [
+    "rename",
+    "file",
+    "folder",
+    "camelCase",
+    "snake_case",
+    "kebab-case"
+  ],
+  "author": "zemil",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/command-line-args": "5.2.0",
+    "@types/glob": "7.2.0",
+    "@types/jest": "27.0.3",
+    "jest": "27.4.0",
+    "nodemon": "2.0.15",
+    "prettier": "2.5.0",
+    "ts-jest": "27.0.7",
+    "tslint": "6.1.3",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "4.5.2"
+  },
+  "dependencies": {
+    "command-line-args": "5.2.0",
+    "lodash.camelcase": "4.3.0",
+    "lodash.kebabcase": "4.1.1",
+    "lodash.snakecase": "4.1.1"
+  }
+}
