@@ -1,11 +1,11 @@
-# rename-all
+# fs-rename
 
 npm cli package to rename files and folders
 
 ## Cli examples
 
--   `rename-all --to=kebab` change file and folder names to kebab case:
--   `rename-all --to=snake ignore="node_modules,tests"` names to snake case and ignore 2 dirs
+-   `fs-rename --to=kebab` change file and folder names to kebab case:
+-   `fs-rename --to=snake --ignore="node_modules,tests"` names to snake case and ignore 2 dirs
 
 ## Options
 

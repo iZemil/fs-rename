@@ -1,6 +1,6 @@
 {
-  "name": "rename-all",
-  "version": "0.0.1",
+  "name": "fs-rename",
+  "version": "0.0.2",
   "description": "npm cli package to rename files and folders",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -8,7 +8,7 @@
     "lib/**/*"
   ],
   "bin": {
-    "rename-all": "lib/cli.js"
+    "fs-rename": "lib/cli.js"
   },
   "scripts": {
     "dev": "tsc -w & nodemon -q -w ./lib/index.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caki0915/my-awesome-greeter.git"
+    "url": "git+https://github.com/iZemil/fs-rename"
   },
   "keywords": [
     "rename",
